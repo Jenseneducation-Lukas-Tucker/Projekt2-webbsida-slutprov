@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+/* COLOR */
+.white{
+background-color: #fff
+}
+
+.red{
+background-color: red
+}
+
+.purple{
+background-color: #9b59b6;
+}
+
+.dark-grey{
+background-color: #333
+}
+
+.light-grey{
+    color: #888;
+}
+
+/* HEADER */
+.media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.menu{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex: 0 1 30vw;
+} 
+
+.menu li:hover{
+    background-color: red;
+    cursor: pointer;
+
+}
+
+.logo{
+    width: 100px;
+    text-align: center;
+    border-radius:0 0 50% 50%;
+    margin: 0%;
+    padding: 0%;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top:30px;
+
+}
+/* FIRST PAGE */
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1)
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2{
+    color: #888;
+}
+
+#landing-image {
+    background: url(/img/project.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+#landing-text-inner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff
+    }
+    
+    #header h2{
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    }
+    
+    .caption{
+        padding: 0.8rem;
+        text-align: center;
+    }
+
+/* BUTTONS */
+.btn {
+    border: 2px solid #fff;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: rgb(255, 0, 0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.btn::before{
+    border-radius: 0%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(250, 250, 250);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    color: black
+}
+
+.btn:hover:before, .btn:focus:before, .btn:active:before {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    }
+/* ABOUT */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+}
+
+.caption img{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    float: right;
+    right: 100px
+}
+/* CONTACT */
+#contact{
+    background: url(/img/photo-1505764761634-1d77b57e1966.jpg);
+    background-size: cover;
+}
+.contact-form{
+    margin:auto;
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+}
+.contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+}
+
+.txtb{
+    border: 1px solid grey;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.txtb label{
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.txtb input,.txtb textarea{
+width: 100%;
+border: none;
+background: none;
+outline: none;
+font-size: 18px;
+margin-top: 6px;
+}
+
+/* Button At The Bottom */
+.btn2{
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 0px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn2:hover{
+    font-size:20px; 
+    box-shadow: 0 0 10px black
+}
+
+
+.btn3 {
+    border: 2px solid #eaeaea;
+    background: none;
+    width: 100%;
+    height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 800ms;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0%;
+    text-decoration: none;
+}
+
+.btn4{
+    color: #eaeaea
+}
+
+.btn4:hover{
+    color: black;
+}
+
+.btn3::before{
+    text-decoration: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #9e9e9e;
+    z-index: -1;
+    transition: 800ms;
+}
+
+.btn4::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
+
+.btn4:hover::before{
+    height: 0%;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+/* FIXING A RESPONSIVE WEBSITE */
+@media (min-width:900px){
+    header{
+        max-width: 1500px;
+    }
+#landing{
+    display: grid;
+}
+}
+}
