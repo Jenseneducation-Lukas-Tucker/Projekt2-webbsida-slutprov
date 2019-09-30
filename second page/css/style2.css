@@ -31,6 +31,45 @@ background-color: #333
     color: #888;
 }
 
+/* GRID AREAS */
+#landing-image{
+    grid-area: image;
+}
+#landing-text{
+    grid-area: text;
+}
+
+#head1{
+    grid-area: head1;
+}
+#project1{
+    grid-area: project1;
+}
+#project2{
+    grid-area: project2;
+}
+#project3{
+    grid-area: project3;
+}
+#project4{
+    grid-area: project4;
+}
+
+#head2{
+    grid-area: head2;
+}
+#know1{
+    grid-area: know1;
+}
+#know2{
+    grid-area: know2;
+}
+#know3{
+    grid-area: know3;
+}
+
+
+
 /* HEADER */
 .media {
     display: flex;
@@ -229,6 +268,8 @@ header {
 #contact{
     background: url(/img/photo-1505764761634-1d77b57e1966.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .contact-form{
     margin:auto;
@@ -350,7 +391,45 @@ footer h3{
         max-width: 1500px;
     }
 #landing{
-    display: grid;
+display: grid;
+grid-template-areas: "text image";
+grid-gap: 20px;
 }
+
+#images{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "head1 head1"
+    "project1 project2"
+    "project3 project4"
+}
+
+#about{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "head2 head2"
+    "know1 know2"
+    "know3 know3";
+}
+#know3{
+    padding-left: 25%;
+    height: 50%;
+    width: 50%;
+}
+
+#images img:hover{
+    animation-name: flash;
+    animation-duration: 1.5s
+}
+
+@keyframes flash{
+    0% {
+        opacity: 0.4;
+    }
+    100%{
+        opacity; 1;
+    }
 }
 }
