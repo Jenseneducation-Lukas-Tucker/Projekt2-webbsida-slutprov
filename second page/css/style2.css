@@ -77,11 +77,15 @@ background-color: #333
     align-items: center;
 }
 
+.icon{
+    height: 
+}
+
 .menu li{
     list-style: none;
     border: 1px solid black;
     border-radius: 50%;
-    padding: 20px 20px;
+    padding: 10px 10px;
     background-color: rgb(255, 255, 255);
     transition: 0.5s;
 }
@@ -237,7 +241,7 @@ header {
 }
 
 .btn:hover, .btn:focus, .btn:active{
-    color: black
+    color: black;
 }
 
 .btn:hover:before, .btn:focus:before, .btn:active:before {
@@ -262,7 +266,6 @@ header {
     height: 25px;
     width: 25px;
     float: right;
-    right: 100px
 }
 /* CONTACT */
 #contact{
@@ -424,6 +427,14 @@ grid-gap: 20px;
     animation-duration: 1.5s
 }
 
+.btn {
+    font-size: 30px;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    font-weight: bold;
+}
+
 @keyframes flash{
     0% {
         opacity: 0.4;
@@ -432,4 +443,5 @@ grid-gap: 20px;
         opacity; 1;
     }
 }
+
 }
