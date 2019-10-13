@@ -431,6 +431,9 @@ grid-gap: 20px;
 .btn:hover, .btn:focus, .btn:active{
     font-weight: bold;
 }
+.caption img{
+    right: 100px
+}
 
 @keyframes flash{
     0% {
